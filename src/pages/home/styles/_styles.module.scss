@@ -1,0 +1,71 @@
+
+.header{
+  margin: 0 auto;
+  position: relative;
+}
+
+.logo {
+  float:left;
+}
+
+.navbar {
+  text-align: right;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: normal;
+  font-size: 17px;
+  margin: 30px;
+  padding-top: 20px;
+
+  .menu {
+    padding-right: 36px;
+  }
+}
+
+.contentIllustration{
+  float: left;
+}
+
+.content {
+  float: right;
+  right: 0;
+
+  .introText1{
+    font-size: 70px;
+    text-align: right;
+    color: #878787;
+  }
+
+  .introText2{
+    font-size: 70px;
+    text-align: left;
+    margin-top: -70px;
+  }
+
+  .biographySection{
+    float: right;
+    margin-top: -20px;
+
+    .checkedLabel {
+      text-align: right;
+    }
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+
+  .tagline1{
+    color: #878787;
+    font-size: 70px;
+    margin-bottom: -10px;
+
+    .subTagline1{
+      color: black;
+    }
+  }
+
+  .tagline2{
+    font-size: 20px;
+  }
+}
