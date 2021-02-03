@@ -1,0 +1,11 @@
+{
+	"rootDir":".",
+	"moduleFileExtensions": ["js", "json"],
+	"testRegex": ".test.js",
+	"setupFilesAfterEnv": ["<rootDir>/enzyme.js"],
+	"moduleNameMapper": {
+		"^.+\\.(css|less|scss)$": "babel-jest"
+	},
+	"testPathIgnorePatterns": ["/node_modules/", "/.next/"]
+  }
+  
