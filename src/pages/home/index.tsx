@@ -1,7 +1,9 @@
-import { Container, Checkbox, Button, FormControlLabel } from "@material-ui/core";
+import { Container, Button } from "@material-ui/core";
 import styles from './styles/_styles.module.scss'
+import MainContent from './components/mainContent'
 
 export default function HomeIndex(){
+
     return(
         <Container maxWidth="lg">
             <div className={styles.header}>
@@ -18,49 +20,8 @@ export default function HomeIndex(){
                   <Button variant="outlined">Contact Me</Button>
               </div>
             </div>
-            <div className={styles.contentIllustration}>
-                <img className={styles.img} src={"image/reynaldi-img-illustration.png"}/>
-            </div>
-            <div className={styles.content}>
-
-                <div className={styles.intro}>
-                    <p className={styles.introText1}>Hi, I'm Reynaldi</p>
-                    <p className={styles.introText2}>Software Engineer</p>
-                </div>
-                <div className={styles.biographySection}>
-                    <div className={styles.checkedLabel}>
-                        <FormControlLabel
-                            value="start"
-                            control={<Checkbox color="default"/>}
-                            label="See Who I Am"
-                            labelPlacement="start"
-                        />
-                    </div>
-                    <div className={styles.checkedLabel}>
-                        <FormControlLabel
-                            value="start"
-                            control={<Checkbox color="default" />}
-                            label="Work Experience"
-                            labelPlacement="start"
-                        />
-                    </div>
-                    <div className={styles.checkedLabel}>
-                        <FormControlLabel
-                            value="start"
-                            control={<Checkbox color="default" />}
-                            label="Skill Expertise"
-                            labelPlacement="start"
-                        />
-                    </div>
-                    <div className={styles.checkedLabel}>
-                        <FormControlLabel
-                            value="start"
-                            control={<Checkbox color="default" />}
-                            label="Interest and Hobbies"
-                            labelPlacement="start"
-                        />
-                    </div>
-                </div>
+            <div>
+                {MainContent()}
             </div>
             <div className={styles.footer}>
                 <div>
